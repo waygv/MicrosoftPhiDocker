@@ -13,11 +13,12 @@ This project runs [Microsoft's Phi-3 Mini (4k Instruct)](https://huggingface.co/
 ---
 
 ## 📂 Project Structure
+```
 ├── run.py # Main Python script for inference
 ├── .env # Your Hugging Face token (keep this secret!)
 ├── requirements.txt # Python dependencies
 └── Dockerfile # Docker setup instructions
-
+```
 
 ---
 
@@ -34,11 +35,14 @@ HF_TOKEN=hf_your_actual_token_here
 You can get a token from: https://huggingface.co/settings/tokens
 
 ### Build the Docker Image and run CPU app
+
 ```
 docker build -t MicrosoftPhiDocker .
 docker run --rm --env-file .env MicrosoftPhiDocker
 ```
+
 Credits
+
 Hugging Face
 
 Microsoft Phi-3
